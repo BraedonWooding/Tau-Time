@@ -1,5 +1,7 @@
 # Tau Time
 
+[![npm version](https://badge.fury.io/js/tau-time.svg)](https://badge.fury.io/js/tau-time)
+
 > Immutable time manipulation library focused on math
 
 > Small library at only 1.1 kB gzipped (3 kB minified)
