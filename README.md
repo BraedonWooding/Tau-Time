@@ -60,6 +60,14 @@ tau.seconds(5).toUnits(tau.TimeUnit.Hours); // convert to a different units, thi
 tau.seconds(5).toString();
 tau.seconds(5).toString(2, tau.TimeUnit.Minutes); // first argument is precisionk, second is time unit override
 tau.seconds(5).toValue(tau.TimeUnit.Seconds); // '5' returns the numeric value of the duration converted to the time unit specified
+// just maps to `toValue()`
+tau.nanoseconds(5).nanoseconds();
+tau.nanoseconds(5).microseconds();
+tau.nanoseconds(5).milliseconds();
+tau.nanoseconds(5).seconds();
+tau.nanoseconds(5).minutes();
+tau.nanoseconds(5).hours();
+tau.nanoseconds(5).days();
 
 // Math
 tau.seconds(5)

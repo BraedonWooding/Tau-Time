@@ -104,6 +104,34 @@ export class Duration {
     );
   }
 
+  nanoseconds() {
+    return this.toUnits(TimeUnit.Nanoseconds);
+  }
+
+  microseconds() {
+    return this.toUnits(TimeUnit.Microseconds);
+  }
+
+  milliseconds() {
+    return this.toUnits(TimeUnit.Milliseconds);
+  }
+
+  seconds() {
+    return this.toUnits(TimeUnit.Seconds);
+  }
+
+  minutes() {
+    return this.toUnits(TimeUnit.Minutes);
+  }
+
+  hours() {
+    return this.toUnits(TimeUnit.Hours);
+  }
+
+  days() {
+    return this.toUnits(TimeUnit.Days);
+  }
+
   mul(other: Duration): Duration {
     const newUnit = Duration.coalesceSmallerUnits(this.unit, other.unit);
     return new Duration(
