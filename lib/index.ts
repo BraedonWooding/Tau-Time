@@ -105,31 +105,31 @@ export class Duration {
   }
 
   nanoseconds() {
-    return this.toUnits(TimeUnit.Nanoseconds);
+    return this.toValue(TimeUnit.Nanoseconds);
   }
 
   microseconds() {
-    return this.toUnits(TimeUnit.Microseconds);
+    return this.toValue(TimeUnit.Microseconds);
   }
 
   milliseconds() {
-    return this.toUnits(TimeUnit.Milliseconds);
+    return this.toValue(TimeUnit.Milliseconds);
   }
 
   seconds() {
-    return this.toUnits(TimeUnit.Seconds);
+    return this.toValue(TimeUnit.Seconds);
   }
 
   minutes() {
-    return this.toUnits(TimeUnit.Minutes);
+    return this.toValue(TimeUnit.Minutes);
   }
 
   hours() {
-    return this.toUnits(TimeUnit.Hours);
+    return this.toValue(TimeUnit.Hours);
   }
 
   days() {
-    return this.toUnits(TimeUnit.Days);
+    return this.toValue(TimeUnit.Days);
   }
 
   mul(other: Duration): Duration {
