@@ -1,6 +1,6 @@
 {
   "name": "tau-time",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "A convenient time unit library with math support",
   "main": "dist/lib/index.js",
   "types": "dist/lib/index.d.ts",
@@ -12,7 +12,12 @@
     "test": "mocha --reporter spec --require ts-node/register src/**/*.test.ts",
     "test:watch": "mocha --reporter spec --require ts-node/register src/**/*.test.ts -w --watch-files src,lib"
   },
-  "keywords": [],
+  "keywords": [
+    "time",
+    "tau",
+    "date",
+    "unit"
+  ],
   "author": "Braedon Wooding",
   "license": "MIT",
   "bugs": {
